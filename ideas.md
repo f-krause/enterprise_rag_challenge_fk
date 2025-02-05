@@ -1,0 +1,36 @@
+# Brainstorming
+
+## Ad Rinat:
+- will questions/generator be known in advance?
+- public evaluation set?
+- how similar to old challenge?
+
+## Ideas
+- Evaluation set?
+- Haystack!
+- file format -> well formatted/easier to interpret than pdf
+	- Check: https://github.com/NirDiamant/RAG_Techniques
+    - [Docling](https://github.com/DS4SD/docling)? 
+	- [PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/)
+	- -> Experiment: how tables are outputted
+	- convert PDFs to latex?
+- document preprocess -> table vs. text
+	- process tables separately?
+	- flag tables over multiple pages and then extract tables manually
+- In context: financial synonyms/domain knowledge in context?
+- Solution pipeline
+	1. Lookup tables like Daniel
+		- split tables from text?
+		- more sophisticated processing pipeline of PDFs/tables (how?) 	
+	2. If fails: backup plan (Multiagent approach with classic RAG)
+		- Improve context (chapter headers, reranking?)
+		- Router to specialised RAG systems 
+		- RAG with high accuracy (less optimized on speed) -> Chroma
+	3. If fails: agent loop with full text search? (LOW PRIO)
+		- Iterative: output why failed before and what to do better 
+		- PostgresSQL (full text + vector db)
+			- let LLM search for keywords + context
+		- iterating search queries until solution found
+- Pipeline tools
+	- Calculator/python kernel -> ratio computation
+	- Websearch tool? (duckduckgo?)

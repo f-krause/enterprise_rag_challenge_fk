@@ -1,0 +1,26 @@
+{
+    "reference":{
+        "0":"The report of YELLOW PAGES LIMITED (Petra Diamonds) is for 2022 not 2023.",
+        "1":"The report is from YELLOW PAGES LIMITED (Petra Diamonds).",
+        "2":"The total revenues of YELLOW PAGES LIMITED (Petra Diamonds) in 2022 was $268,278, which was a 6.7% increase to the year before.",
+        "3":"The total revenues of YELLOW PAGES LIMITED (Petra Diamonds) in 2022 was $268,278, which was a 6.7% increase to the year before.",
+        "4":"The basic income per share in Q2 of 2021 of YELLOW PAGES LIMITED (Petra Diamonds) was 0.23$",
+        "5":"In 2021, the total equity change of dividends to shareholders was -14,730,000 Canadian Dollars."
+    },
+    "query":{
+        "0":"What was the accounts receivable of 'Petra Diamonds in the fiscal year 2023?",
+        "1":"What was the total assets of 'TransUnion' in the fiscal year 2023?",
+        "2":"What was the total revenue for Petra Diamonds in 2022?",
+        "3":"By how much did the total revenue for Petra Diamonds increase in 2022?",
+        "4":"What was the total revenue for Petra Diamonds in 2022?",
+        "5":"What was the total change in equity for dividends paid to shareholders in 2021?"
+    },
+    "response":{
+        "0":null,
+        "1":null,
+        "2":null,
+        "3":null,
+        "4":null,
+        "5":null
+    }
+}
