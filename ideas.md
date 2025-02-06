@@ -9,11 +9,12 @@
 - Evaluation set?
 - Haystack!
 - file format -> well formatted/easier to interpret than pdf
-	- Check: https://github.com/NirDiamant/RAG_Techniques
-    - [Docling](https://github.com/DS4SD/docling)? 
-	- [PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/)
-	- -> Experiment: how tables are outputted
-	- convert PDFs to latex?
+  - Check: https://www.reddit.com/r/LangChain/comments/1dzj5qx/best_pdf_parser_for_rag/
+  - Check: https://github.com/NirDiamant/RAG_Techniques
+  - [Docling](https://github.com/DS4SD/docling)? 
+  - [PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/)
+  - -> Experiment: how tables are outputted
+  - convert PDFs to latex?
 - document preprocess -> table vs. text
 	- process tables separately?
 	- flag tables over multiple pages and then extract tables manually
@@ -34,3 +35,15 @@
 - Pipeline tools
 	- Calculator/python kernel -> ratio computation
 	- Websearch tool? (duckduckgo?)
+
+
+At inference time: load chunks, store with index (see [here](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/context_enrichment_window_around_chunk.ipynb)) 
+and then ask LLM if it thinks a table has been cut and if necessary information could be useful, allow to receive 
+continuation of chunk and combine them. -> necessary with PyMuPDF4LLM?
+
+Idea: add to each chunk, chapter (and subchapter) headers (or split by chapters altogether)
+-> should be possible with PyMuPDF4LLM (as markdown files, just need logic to retrieve headers and attach them to chunks)
+
+[Reranking](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
+
+fusion search (key word and vector based) - [here](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)
