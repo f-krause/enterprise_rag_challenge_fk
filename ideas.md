@@ -41,9 +41,12 @@ At inference time: load chunks, store with index (see [here](https://github.com/
 and then ask LLM if it thinks a table has been cut and if necessary information could be useful, allow to receive 
 continuation of chunk and combine them. -> necessary with PyMuPDF4LLM?
 
+[Reranking](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
+
+Rephrasing - rephrase user query in simpler terms for RAG retrieval (than for final answer use original query?)
+
 Idea: add to each chunk, chapter (and subchapter) headers (or split by chapters altogether)
 -> should be possible with PyMuPDF4LLM (as markdown files, just need logic to retrieve headers and attach them to chunks)
 
-[Reranking](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/reranking.ipynb)
 
 fusion search (key word and vector based) - [here](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)
