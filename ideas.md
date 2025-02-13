@@ -50,3 +50,10 @@ Idea: add to each chunk, chapter (and subchapter) headers (or split by chapters 
 
 
 fusion search (key word and vector based) - [here](https://github.com/NirDiamant/RAG_Techniques/blob/main/all_rag_techniques/fusion_retrieval.ipynb)
+
+
+
+TODO: try claude citations (for proper referencing - should work well according to daniel if data is already chunked)
+
+TODO: check if can inject code to count pages in docling md from within source code when parsing pdf page by page?
+
