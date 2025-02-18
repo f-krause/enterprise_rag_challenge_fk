@@ -57,3 +57,4 @@ TODO: try claude citations (for proper referencing - should work well according 
 
 TODO: check if can inject code to count pages in docling md from within source code when parsing pdf page by page?
 
+TODO: Gemini baseline: just full PDF in context and question with proper system prompt 
