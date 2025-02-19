@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Did Calyxt, Inc. mention any mergers or acquisitions in the annual report?",
+    "kind": "boolean"
+  },
+  {
+    "text": "According to the annual report, what is the Operating margin (%) for Calyxt, Inc.  (within the last period or at the end of the last period)? If data is not available, return 'N/A'.",
+    "kind": "number"
+  },
+  {
+    "text": "Which leadership **positions** changed at Calyxt, Inc. in the reporting period? If data is not available, return 'N/A'.",
+    "kind": "names"
+  },
+  {
+    "text": "For Calyxt, Inc., what was the value of Total expensed R&D expenditure at the end of the period listed in annual report? If data is not available, return 'N/A'.",
+    "kind": "number"
+  },
+  {
+    "text": "Did Calyxt, Inc. mention any ongoing litigation or regulatory inquiries?",
+    "kind": "boolean"
+  },
+  {
+    "text": "What is the total number of employees let go by Calyxt, Inc. according to the annual report? If data is not available, return 'N/A'.",
+    "kind": "number"
+  },
+  {
+    "text": "According to the annual report, what is the Cash flow from operations (in USD) for Calyxt, Inc.  (within the last period or at the end of the last period)? If data is not available, return 'N/A'.",
+    "kind": "number"
+  },
+  {
+    "text": "For Calyxt, Inc., what was the value of Data center capacity (MW) at the end of the period listed in annual report? If data is not available, return 'N/A'.",
+    "kind": "number"
+  },
+  {
+    "text": "According to the annual report, what is the Total revenue (in USD) for Calyxt, Inc.  (within the last period or at the end of the last period)? If data is not available, return 'N/A'.",
+    "kind": "number"
+  },
+  {
+    "text": "Did Calyxt, Inc. detail any restructuring plans in the latest filing?",
+    "kind": "boolean"
+  }
+]
