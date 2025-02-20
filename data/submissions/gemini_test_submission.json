@@ -1,0 +1,29 @@
+{
+    "team_email": "felix.krause@timetoact.at",
+    "submission_name": "gemini",
+    "answers": [
+        {
+            "question_text": "Did Backpowder Inc mention any mergers or acquisitions in the annual report?",
+            "kind": "boolean",
+            "value": "N/A",
+            "references": []
+        },
+        {
+            "question_text": "According to the annual report, what is the Operating margin (%) for Yellow Pages Limited  (within the last period or at the end of the last period)? If data is not available, return 'N/A'.",
+            "kind": "number",
+            "value": "36.0",
+            "references": [
+                {
+                    "pdf_sha1": "9d7a72445aba6860402c3acce75af02dc045f74d",
+                    "page_index": 8
+                }
+            ]
+        },
+        {
+            "question_text": "What was the largest single spending of Calyxt, Inc. on executive compensation in USD?",
+            "kind": "name",
+            "value": "N/A",
+            "references": []
+        }
+    ]
+}
