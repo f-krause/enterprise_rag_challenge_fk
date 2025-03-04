@@ -21,20 +21,27 @@ class AnswerSubmission(BaseModel):
     answers: List[Answer] = Field(..., description="List of answers to the questions")
 
 
-def get_companies_dict(path: str) -> dict:
-    # TODO adapt path
+def get_companies_dict(path: str, subset_json=True) -> dict:
     with open(path, "r") as file:
         dataset = json.load(file)
 
-    company_ls = {}
-    for idx, data in dataset.items():
-        if "sha1" not in data:
-            continue
-        if "meta" not in data:
-            continue
-        company_name = data["meta"]["company_name"]
-        sha = data["sha1"]
-        company_ls[company_name] = {"id": idx[:-4], "sha1": sha}
+    if subset_json:
+        # code for subset.json
+        company_ls = {}
+        for company in dataset:
+            company_ls[company["company_name"]] = {"name": company["company_name"], "sha1": company["sha1"], "id": None}
+
+    else:
+        # code for full dataset_v2.json
+        company_ls = {}
+        for idx, data in dataset.items():
+            if "sha1" not in data:
+                continue
+            if "meta" not in data:
+                continue
+            company_name = data["meta"]["company_name"]
+            sha = data["sha1"]
+            company_ls[company_name] = {"id": idx[:-4], "sha1": sha}
 
     return company_ls
 

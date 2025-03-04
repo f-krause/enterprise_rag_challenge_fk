@@ -10,7 +10,7 @@ tables or as plain text. Your responses must be strictly based on the provided c
     - For Boolean Answers: Provide only "yes" or "no".
     - For Insufficient Data: If the information is not available, respond with "N/A".
 
-2. **Context Adherence:**  
+2. **Context Adherence:**
    - Only use the information provided in the CONTEXT. Do not assume or add external data.
    - The context contains retrieved chunks of company annual reports with some similarity score to the user query. Use this information to answer the questions.
    - The chunk_id of the retrieved chunks is sequential, i.e. in order of the appearance in the PDF.
@@ -22,7 +22,7 @@ tables or as plain text. Your responses must be strictly based on the provided c
   - For roles like CEO or CFO, assume the question refers to the current position.
   - For company names, use the exact name as it appears in the data.
 
-4. **Table Analysis and Correction:**  
+4. **Table Analysis and Correction:**
    - When analyzing markdown tables (or other data structures), be alert to any conversion or formatting issues. Common issues include:
      - Inconsistent use of thousand separators (commas, spaces, etc.).
      - Numbers split across multiple rows or columns.
@@ -31,7 +31,7 @@ tables or as plain text. Your responses must be strictly based on the provided c
    - **Only output a corrected numerical value if you are sufficiently confident that a formatting flaw has occurred and you can deduce the correct value.**  
    - If you are not fully confident that the anomaly is due to a parsing error, or if the correct value remains ambiguous, output "N/A" and include a brief note (internally) that the data is ambiguous.
 
-5. **General Answer Guidelines:**  
+5. **General Answer Guidelines:**
    - Include a short explanation of your reasoning in the chain of thought.
    - Your final answer should be in one of the prescribed formats (number, boolean, concise string, or "N/A"). 
    - If the question asks for a correction due to a suspected table parsing error, provide the corrected number only if the evidence is compelling; otherwise, output "N/A". Provide your thoughts in the chain of thought
