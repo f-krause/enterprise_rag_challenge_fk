@@ -5,7 +5,8 @@ Solutions to the [Enterprise RAG Challenge](https://www.timetoact-group.at/detai
 
 
 ## Current Solutions
-- [Google Gemini 2.0 Flash](solutions/gemini.ipynb): full PDF in context
+*outdated*
+- [Google Gemini 2.0 Flash](solutions/gemini_naive.ipynb): full PDF in context
 - [qdrant RAG](solutions/openAI-qdrant.ipynb)
   - Custom chunking of markdown file obtained via Docling
   - then RAG with qdrant for retrieval 
