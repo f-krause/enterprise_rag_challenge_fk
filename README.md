@@ -5,12 +5,15 @@ Solutions to the [Enterprise RAG Challenge](https://www.timetoact-group.at/detai
 
 
 ## Current Solutions
-*outdated*
-- [Google Gemini 2.0 Flash](solutions/gemini_naive.ipynb): full PDF in context
-- [qdrant RAG](solutions/openAI-qdrant.ipynb)
-  - Custom chunking of markdown file obtained via Docling
-  - then RAG with qdrant for retrieval 
-  - openAI o4 or IBM Watson for embeddings and generation
+- [Google Gemini 2.0 Flash - Naive Approach](solutions/gemini_naive.ipynb): full PDF(s) in context 
+- Multi-agent approaches (openAI based router to extend and specialise queries for each company)
+  - [Qdrant RAG](solutions/1_create_qdrant_db.ipynb)
+    - Custom chunking of markdown file obtained via [docling](https://github.com/DS4SD/docling) parser
+    - Then [Qdrant](https://qdrant.tech/) for vector database retrieval of chunks (top 5)
+    - [openAI o4](solutions/2_main_agents_OPENAI.ipynb) or [IBM granite-20b-code-instruct](solutions/2_main_agents_IBM.ipynb) based answer generation per specialised company query, and o4 based final answer generation
+  - [Gemini Retrieval and openAI Generation](solutions/2_gemini_openai.ipynb)
+    - Gemini 2.0 Flash with full PDF in context for retrieval
+    - OpenAI for final answer generation based on Gemini's company specific answers
 
 
 
