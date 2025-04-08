@@ -1,7 +1,7 @@
 import json
 from pydantic import BaseModel, Field
 from typing import List, Optional, Literal, Union
-
+from IPython.display import Markdown, display
 
 class SourceReference(BaseModel):
     pdf_sha1: str = Field(..., description="SHA1 hash of the PDF file")
@@ -48,3 +48,7 @@ def get_companies_dict(path: str, subset_json=True) -> dict:
 
 def get_company_name(query):
     pass
+
+def print_md(s):
+    s = s.replace("\\(", "$").replace("\\)", "$")  # fix latex formulas for markdown
+    display(Markdown(s))
