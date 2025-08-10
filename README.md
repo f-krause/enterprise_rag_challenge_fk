@@ -1,7 +1,12 @@
 # Enterprise RAG Challenge - Solutions
 by Felix Krause
 
+<img width="2446" height="993" alt="project12" src="https://github.com/user-attachments/assets/ce79fac1-0541-49c4-b34f-1ec88c07826f" />
+
+
 Solutions to the [Enterprise RAG Challenge](https://www.timetoact-group.at/details/enterprise-rag-challenge) of Timetoact Austria on 27.02.2025.
+
+[BLOG POST](https://www.timetoact-group.at/en/techblog/techblog/8th-place-in-enterprise-rag-challenge-2025-answering-business-questions-with-llms) explaining the solutions here.
 
 
 ## Current Solutions
